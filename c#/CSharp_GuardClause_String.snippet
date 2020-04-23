@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2017/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Guard Clause String</Title>
+      <Description>Guard clause checking if string parameter is null</Description>
+      <Shortcut>gcString</Shortcut>
+    </Header>
+    <Snippet>
+      <Code Language="CSharp">
+        <![CDATA[if(string.IsNullOrWhiteSpace($parameterName$)) throw new ArgumentNullException(nameof($parameterName$));$end$]]>
+      </Code>
+      <Declarations>
+        <Literal>
+          <ID>parameterName</ID>
+          <ToolTip>Name of the parameter</ToolTip>
+          <Default>parameterName</Default>
+        </Literal>
+      </Declarations>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

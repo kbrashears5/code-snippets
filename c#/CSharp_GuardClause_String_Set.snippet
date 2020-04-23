@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2017/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Guard Clause String</Title>
+      <Description>Guard clause checking if string parameter is null and setting at the same time</Description>
+      <Shortcut>gcStringSet</Shortcut>
+    </Header>
+    <Snippet>
+      <Code Language="CSharp">
+        <![CDATA[this.$classProperty$ = string.IsNullOrWhiteSpace($parameterName$) ? throw new ArgumentNullException(nameof($parameterName$)) : $parameterName$;$end$]]>
+      </Code>
+      <Declarations>
+        <Literal>
+          <ID>classProperty</ID>
+          <ToolTip>Name of class property string to set</ToolTip>
+          <Default>classProperty</Default>
+        </Literal>
+        <Literal>
+          <ID>parameterName</ID>
+          <ToolTip>Name of the parameter</ToolTip>
+          <Default>parameterName</Default>
+        </Literal>
+      </Declarations>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
