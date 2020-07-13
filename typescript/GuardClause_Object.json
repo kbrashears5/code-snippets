@@ -1,0 +1,9 @@
+{
+	"Guard clause object": {
+		"prefix": "gco",
+		"body": [
+			"if (this.ObjectOperations.IsNullOrEmpty($1)) throw new Error(`Value cannot be null or undefined: [$1]`);"
+		],
+		"description": "Create guard clause for object parameters"
+	}
+}

@@ -1,0 +1,10 @@
+{
+    "Guard clause object set": {
+		"prefix": "gcos",
+		"body": [
+            "if (this.ObjectOperations.IsNullOrEmpty($1)) throw new Error(`Value cannot be null or undefined: [$1]`);",
+            "else this.$2 = $1;"
+		],
+		"description": "Create guard clause for object parameters and set class variable"
+	}
+}

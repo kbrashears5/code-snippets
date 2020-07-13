@@ -1,0 +1,9 @@
+{
+	"Guard clause number": {
+		"prefix": "gcn",
+		"body": [
+			"if ($1 === 0) throw new Error(`Value cannot be zero: [$1]`);"
+		],
+		"description": "Create guard clause for number parameters"
+	}
+}

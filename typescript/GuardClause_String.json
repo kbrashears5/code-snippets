@@ -1,0 +1,9 @@
+{
+	"Guard clause string": {
+		"prefix": "gcs",
+		"body": [
+			"if (this.ObjectOperations.IsNullOrWhitespace($1)) throw new Error(`Value cannot be null or undefined: [$1]`);"
+		],
+		"description": "Create guard clause for string parameters"
+	}
+}

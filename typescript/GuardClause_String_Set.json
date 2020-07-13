@@ -1,0 +1,10 @@
+{
+    "Guard clause string set": {
+		"prefix": "gcss",
+		"body": [
+            "if (this.ObjectOperations.IsNullOrWhitespace($1)) throw new Error(`Value cannot be null or undefined: [$1}]`);",
+            "else this.$2 = $1;"
+		],
+		"description": "Create guard clause for string parameters and set class variable"
+	}
+}

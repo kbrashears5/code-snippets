@@ -1,0 +1,47 @@
+{
+	"Guard clause string": {
+		"prefix": "gcs",
+		"body": [
+			"if (this.ObjectOperations.IsNullOrWhitespace($1)) throw new Error(`Value cannot be null or undefined: [$1]`);"
+		],
+		"description": "Create guard clause for string parameters"
+	},
+    "Guard clause string set": {
+		"prefix": "gcss",
+		"body": [
+            "if (this.ObjectOperations.IsNullOrWhitespace($1)) throw new Error(`Value cannot be null or undefined: [$1]`);",
+            "else this.$2 = $1;"
+		],
+		"description": "Create guard clause for string parameters and set class variable"
+	},
+    "Guard clause object": {
+		"prefix": "gco",
+		"body": [
+			"if (this.ObjectOperations.IsNullOrEmpty($1)) throw new Error(`Value cannot be null or undefined: [$1]`);"
+		],
+		"description": "Create guard clause for object parameters"
+    },
+    "Guard clause object set": {
+		"prefix": "gcos",
+		"body": [
+            "if (this.ObjectOperations.IsNullOrEmpty($1)) throw new Error(`Value cannot be null or undefined: [$1]`);",
+            "else this.$2 = $1;"
+		],
+		"description": "Create guard clause for object parameters and set class variable"
+    },
+    "Guard clause number": {
+		"prefix": "gcn",
+		"body": [
+			"if ($1 === 0) throw new Error(`Value cannot be zero: [$1]`);"
+		],
+		"description": "Create guard clause for number parameters"
+    },
+    "Guard clause number set": {
+		"prefix": "gcns",
+		"body": [
+            "if ($1 === 0) throw new Error(`Value cannot be zero: [$1]`);",
+            "else this.$2 = $1;"
+		],
+		"description": "Create guard clause for number parameters and set class variable"
+	}
+}

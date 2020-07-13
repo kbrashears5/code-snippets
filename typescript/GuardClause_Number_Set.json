@@ -1,0 +1,10 @@
+{
+    "Guard clause number set": {
+		"prefix": "gcns",
+		"body": [
+            "if ($1 === 0) throw new Error(`Value cannot be zero: [$1]`);",
+            "else this.$2 = $1;"
+		],
+		"description": "Create guard clause for number parameters and set class variable"
+	}
+}
