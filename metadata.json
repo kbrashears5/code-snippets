@@ -1,0 +1,14 @@
+{
+    "description": "Code snippets for different languages to be used in Visual Studio or VSCode",
+    "homepage": "https://github.com/kbrashears5/code-snippets",
+    "keywords": [
+        "c#",
+        "typescript",
+        "snippet",
+        "vscode",
+        "visual",
+        "studio",
+        "visualstudio",
+        "utilities"
+    ]
+}
